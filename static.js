@@ -17,7 +17,7 @@ module.exports = function (req, resp) {
 
 function responseResource(path, type, resp, encoding) {
 
-    if (type) {
+    if (encoding) {
         fs.readFile(path, encoding, (err, data) => {
 
             if(err) {
